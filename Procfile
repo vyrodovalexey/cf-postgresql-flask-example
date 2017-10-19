@@ -1,1 +1,1 @@
-web: python hw.py
+web: python cf-postgresql-flask-example.py

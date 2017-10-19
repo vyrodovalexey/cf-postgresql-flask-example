@@ -28,6 +28,7 @@ def pgsql_insel(ltime):
     password = "your_password"
     database = "your_database"
     hostname = "hosname"
+""" end """
     sres = []
     db1 = psycopg2.connect(host=hostname, dbname=database, user=uname, password=password)
     db1.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
