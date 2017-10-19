@@ -44,3 +44,5 @@ This is an example application which can be run on CloudFoundry.
   
 7. Change uname, password, host and database in cf-postgresql-flask-example.py
 
+##Enjoy!
+
