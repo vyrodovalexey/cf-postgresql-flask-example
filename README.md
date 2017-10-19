@@ -14,7 +14,7 @@ This is an example application which can be run on CloudFoundry.
 2. Clone the app (i.e. this repo).
 
   ```bash
-  git https://github.com/vyrodovalexey/cf-postgresql-flask-example.git
+  git clone https://github.com/vyrodovalexey/cf-postgresql-flask-example.git
   cd cf-postgresql-flask-example
   ```
 
