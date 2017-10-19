@@ -1,7 +1,7 @@
 ## CloudFoundry Example Application:  Python Flask, PostgreSQL
 
-This is an example application which can be run on CloudFoundry. Application will create table ips in PostgreSQL. 
-Every time when you will have an access to the application with browser, it will insert access time and show all users access times
+This is an example application which can be run on CloudFoundry. Application will create table ips (date varchar) in PostgreSQL. 
+Every time when you will have an access to the application with browser, application will insert into the table ips your access time and show all users access times
 
 
 ### Usage
