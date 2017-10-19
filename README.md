@@ -43,7 +43,7 @@ Every time when you will have an access to the application with browser, applica
   cf env cf-postgresql-flask-example
   ```
   
-7. Change uname, password, host and database in cf-postgresql-flask-example.py
+7. Replace uname, password, host and database in cf-postgresql-flask-example.py
 
 ##Enjoy!
 
