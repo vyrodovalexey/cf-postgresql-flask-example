@@ -1,0 +1,8 @@
+---
+applications:
+- name: hw
+  memory: 128M
+  instances: 1
+  random-route: true
+  services:
+  - postgres
