@@ -45,5 +45,5 @@ Every time when you will have an access to the application with browser, applica
   
 7. Replace uname, password, host and database in cf-postgresql-flask-example.py
 
-##Enjoy!
+## Enjoy!
 
