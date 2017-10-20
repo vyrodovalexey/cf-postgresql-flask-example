@@ -1,5 +1,4 @@
 from flask import Flask
-from flask import request
 import time
 import datetime
 import sys
@@ -10,7 +9,6 @@ app = Flask(__name__)
 
 port = int(os.getenv("PORT"))
 
-"""ip = request.remote_addr"""
 @app.route('/')
 def hello_world():
     s=[]
@@ -43,10 +41,7 @@ def pgsql_insel(ltime):
 
     cur.close()
     db1.close()
-    return sres
-
-
-#"" + str(s) +                                    
+    return sres                        
     
 
 if __name__ == '__main__':
