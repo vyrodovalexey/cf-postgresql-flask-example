@@ -4,6 +4,7 @@ import datetime
 import sys
 import os
 import psycopg2
+import json
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 app = Flask(__name__)
 
@@ -21,12 +22,22 @@ def hello_world():
     return '<HTML><BODY>Hello World!' + line + ' h</BODY><HTML>'
 
 def pgsql_insel(ltime):
-""" From cf env cf-postgresql-flask-example """
-    uname = "your_userbame"
-    password = "your_password"
-    database = "your_database"
-    hostname = "hosname"
-""" end """
+    if 'VCAP_SERVICES' in os.environ:
+	services = json.loads(os.getenv('VCAP_SERVICES'))
+	""" Change this in according of env service name """
+	pgsql_env = services['postgres-2.0'][0]['credentials']
+	""" end """
+    else:
+	""" From cf env cf-postgresql-flask-example """
+	uname = "your_userbame"
+	password = "your_password"
+	database = "your_database"
+	hostname = "hosname"
+	""" end """
+    hostname = pgsql_env['hostname']
+    password = pgsql_env['password']
+    database = pgsql_env['database']
+    uname = pgsql_env['username']
     sres = []
     db1 = psycopg2.connect(host=hostname, dbname=database, user=uname, password=password)
     db1.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
