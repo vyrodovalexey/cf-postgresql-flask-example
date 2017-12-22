@@ -28,7 +28,7 @@ def pgsql_insel(ltime):
 	pgsql_env = services['postgres-2.0'][0]['credentials']
 	""" end """
     else:
-	""" From cf env cf-postgresql-flask-example """
+	""" For static """
 	uname = "your_userbame"
 	password = "your_password"
 	database = "your_database"

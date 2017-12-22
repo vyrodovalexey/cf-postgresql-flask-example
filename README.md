@@ -43,7 +43,7 @@ Every time when you will have an access to the application with browser, applica
   cf env cf-postgresql-flask-example
   ```
   
-7. Replace uname, password, host and database in cf-postgresql-flask-example.py
+7. Replace postgres-2.0 to actuial in pgsql_env = services['postgres-2.0'] in cf-postgresql-flask-example.py
 
 8. Push it again to CloudFoundry.
   ```bash
